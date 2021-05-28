@@ -1,0 +1,57 @@
+/* choose: https://fonts.google.com/ */
+
+
+*{
+margin: 0;
+padding:0;
+}
+
+header {
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 6%;
+}
+
+.logo{
+margin-right: auto;
+}
+
+.nav_links li {
+display: inline-block;
+padding: 0px 20px;
+}
+
+/* Tickets, Info, Attractions inside li */
+.nav_links li a {
+color: rgb(0, 0, 0);
+transition: all 0.3s ease 0s;
+text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav_links li a:hover {
+color: rgb(164, 183, 234);
+}
+.nav_links_section_01 {
+justify-content: space-between;
+}  
+.nav_links_section_01 ul{
+justify-content: space-between;
+}    
+.nav_links_section_01 li{
+display: inline-block;    
+padding: 0px 20px;
+}    
+.nav_links_section_01 li a {
+color: rgb(0, 0, 0);
+transition: all 0.3s ease 0s;
+text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav_links_section_01 li a:hover {
+color: rgb(164, 183, 234);
+}
+
+
