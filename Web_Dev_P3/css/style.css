@@ -1,0 +1,86 @@
+/* choose: https://fonts.google.com/ */
+
+
+*{
+margin: 0;
+padding:0;
+}
+/* 12 column grid */
+#content{
+display:grid;
+grid-template-columns: repeat(12,1fr);
+grid-auto-rows: minmax(50%px,auto);
+grid-gap: 10px;
+max-width: 960px;
+margin: 0 auto;
+}
+
+#content > *{
+background: #ffffff;
+padding: 30px;
+}
+
+header {
+grid-column: 1/ 13;/* full width */
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 6%;
+}
+
+.logo{
+margin-right: auto;
+}
+
+.nav_links li {
+display: inline-block;
+padding: 0px 20px;
+}
+
+.nav_links li a {
+color: rgb(0, 0, 0);
+transition: all 0.3s ease 0s;
+text-decoration: none;
+}
+
+/* Tickets, Info, Attractions inside li */
+.nav_links_section_01 {
+justify-content:space-between; /* delete */
+}  
+.nav_links_section_01 ul{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 10%;
+}  
+.nav_links_section_01 li{
+display: inline-block;    
+}   
+
+/* Change the link color on hover */
+.nav_links li a:hover {
+color: rgb(164, 183, 234);
+}
+
+.nav_links_section_01 li a {
+color: rgb(0, 0, 0);
+transition: all 0.3s ease 0s;
+text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav_links_section_01 li a:hover {
+color: rgb(164, 183, 234);
+}
+ 
+
+footer {
+grid-column: 1/ 13;/* full width */
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 6%;
+}
+
+
+
