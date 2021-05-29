@@ -185,6 +185,15 @@ width: 100%;
 	padding: 20px;
 }
 
+#filter_links {
+	height: 100px;
+	background-color: lightgrey;
+	justify-content: left;
+	align-items: center;
+	display: flex;
+	padding: 20px;
+}
+
 .button_tickets {
 
 	border: 2px solid black;
@@ -198,6 +207,17 @@ width: 100%;
 .button_total {
 		width: 150px;
 	height: 50px;
+}
+
+.button_filter {
+
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 50px;
+	margin-right: 40px;
 }
 
 .button_added {
@@ -219,6 +239,32 @@ width: 100%;
 	height: 250px;
 	margin-bottom: 50px;
 
+}
+
+.unit_attraction {
+
+	border: 3px solid #4b93bb;
+	border-radius: 10px;
+	background-color: #4b93bb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 750px;
+	height: 250px;
+	margin-bottom: 50px;
+	padding: 20px;
+
+}
+
+#attractions {
+	background-color: beige;
+	padding: 50px;
+}
+
+.unit_attr_image {
+	width: 200px;
+	height: 200px;
+	margin-right: 40px;
 }
 
 .no_padding {
