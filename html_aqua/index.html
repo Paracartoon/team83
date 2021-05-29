@@ -15,27 +15,31 @@
 <meta name="author" content="Team83">
 </head>
 <body>
-<header>
+<header class="row">
   <!--container for navigation-->
     <!--actual start of navigation-->
+    <div class="column column1">
     <a  href="index.html">
-      <img class="logo" src="img/Aquatica_waterpark_logo.svg" height="30" alt="logo">
+      <img id="logo" src="img/Aquatica_waterpark_logo.svg" alt="logo">
     </a>
+  </div>
 
     <!--What is this button for?-->
-    <button  type="button">
-      <span></span> <!--toggle icon button-->
-    </button>
+    <!-- <button  type="button">
+      <span></span> 
+    </button> -->
     <!--What is this button for?-->
 
     <!--List of Links-->
-    <nav>
+    <div class="column column9">
+    <nav id="top_nav">
     <ul class="nav_links">
       <li><a  href="tickets.html">Tickets<span>(current)</span></a></li>
       <li><a  href="info.html">Info</a></li>
       <li><a  href="attraction.html">Attractions</a></li>
     </ul>
   </nav>
+</div>
 </header>
 
 <section>
@@ -51,24 +55,40 @@
     <!--Button Container-->
       <!--for styling options to set colums and center text-->
       <!--columb with link Option 1-->
-    <nav>
-    <ul class="nav_links_section_01">
-      <li><a href="tickets.html"><img alt="image" height="150" width="150" src="img/icon/ticket_adobespark.png"><h2>Tickets</h2></a></li>
-      <li><a href="info.html"><img alt="image" height="150" width="150" src="img/icon/info_adobespark.png"><h2>Information</h2></a></li>
-      <li><a href="attraction.html"><img alt="image" height="150" width="150" src="img/icon/attractions_adobespark.jpg"><h2>Attractions</h2></a></li>
+    <nav class="row service_nav">
+    <div class="nav_links_section_01 row">
+      <div class="button_services">
+        <a class="no-underline" href="tickets.html">
+          <img class="thumbnails" alt="image" height="150" width="150" src="img/icon/ticket_adobespark.png">
+              <span class="text_service">Tickets</span>
+            </a>
+          </div>
+      <div class="button_services">
+        <a class="no-underline" href="info.html">
+          <img class="thumbnails" alt="image" height="150" width="150" src="img/icon/info_adobespark.png">
+            <span class="text_service">Information</span>
+          </a>
+        </div>
+      <div class="button_services">
+        <a class="no-underline" href="attraction.html">
+          <img class="thumbnails" alt="image" height="150" width="150" src="img/icon/attractions_adobespark.jpg">
+            <span class="text_service">Attractions</span>
+          </a>
+        </div>
   </ul>
   </nav>
 </section>
 
 <footer>
-  <div>
-    <div>
+  <div id="div_footer" class="row stretch">
 
-      <div>
+      <div class="column column3">
         <!--columb with Logo-->
-        <h3><strong>Logo</strong></h3>
+        <a  href="index.html">
+      <img id="logo_footer" src="img/Aquatica_waterpark_logo.svg" alt="logo">
+    </a>
       </div>
-      <div>
+      <div class="column column4">
         <!--columb with Contact Details-->
         <h3><strong>Contact Us</strong></h3>
         <nav>
@@ -79,10 +99,9 @@
         </nav>
       </div>
 
-      <div >
+      <div class="column column3">
         <!--columb with Opperating hours-->
-        <h3><strong>Opperating Hours</strong></h3>
-        <nav >
+        <h3><strong>Operating Hours</strong></h3>
           <p>09:00-21:00 Monday</p>
           <p>09:00-21:00 Tuesday</p>
           <p>09:00-21:00 Wednesday</p>
@@ -90,10 +109,8 @@
           <p>09:00-21:00 Friday</p>
           <p>09:00-21:00 Saturday</p>
           <p>09:00-21:00 Sunday</p>
-        </nav>
       </div>
     </div>
-  </div>
 </footer>
 
 </body>
