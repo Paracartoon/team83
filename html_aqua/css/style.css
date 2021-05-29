@@ -51,7 +51,10 @@ width: 100%;
 }
 
 .service_nav {
-	padding: 20px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .column_interests {
@@ -65,6 +68,12 @@ width: 100%;
 
 .column1 {
 	flex: 10%;
+	justify-content: center;
+	display: flex;
+}
+
+.column8 {
+	flex: 80%;
 }
 
 .column9 {
@@ -77,6 +86,12 @@ width: 100%;
 
 .column4 {
 	flex: 40%;
+}
+
+.column6 {
+	flex: 60%;
+	justify-content: stretch;
+	display: flex;
 }
 
 .row {
@@ -139,6 +154,75 @@ width: 100%;
 	width: 100%;
 	padding: 20px;
 	height: 150px;
+}
+
+#tickets1 {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+#tickets2 {
+	display: flex;
+	background-color: beige;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px;
+	height: auto;
+}
+
+#total {
+	background-color: #4b93bb;
+	height: 60px;
+	padding: 20px;
+}
+
+#added_tickets {
+	background-color: #c4e6f9;
+	height: 60px;
+	padding: 20px;
+}
+
+.button_tickets {
+
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button_total {
+		width: 150px;
+	height: 50px;
+}
+
+.button_added {
+		width: 250px;
+	height: 50px;
+	margin-right: 30px;
+}
+
+
+.unit_tickets {
+
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 750px;
+	height: 250px;
+	margin-bottom: 50px;
+
+}
+
+.no_padding {
+	padding: 0;
 }
 
 .interest_text {
