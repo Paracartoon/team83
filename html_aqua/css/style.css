@@ -1,11 +1,26 @@
 /* choose: https://fonts.google.com/ */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kumbh+Sans:wght@300&display=swap');
+
+
 * {
     /* personal preference */
     margin: 0;
     padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
 }
+
+@font-face {
+    font-family: YellowRabbit;
+    src: url("fonts/yellow-rabbit.otf") format("opentype");
+}
+
+h2 {
+	font-size: 40px;
+	font-family: 'YellowRabbit';
+}
+
 html {
     /* make sure we use up the whole viewport */
     width: 100%;
@@ -25,11 +40,11 @@ body {
 
 
 header {
-display:flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 6%;
-background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background-color: #fff;
 }
 
 #logo{
@@ -288,9 +303,22 @@ padding: 50px;
 	display: flex;
 	justify-content: center;
 }
+
+.hot_link_container {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+/*.hot_link_container li {
+    margin-right: 25%;
+    margin-left: 25%;
+}*/
+
 .nav_links li {
-display: inline-block;
-padding: 0px 20px;
+	margin-right: 8%;
+	margin-left: 8%;
+	display: inline-block;
+	padding: 0px 20px;
 }
 
 /* Tickets, Info, Attractions inside li */
@@ -301,19 +329,20 @@ text-decoration: none;
 }
 
 /* Change the link color on hover */
+
 .nav_links li a:hover {
-color: rgb(164, 183, 234);
+    color: rgb(164, 183, 234);
 }
 .nav_links_section_01 {
-justify-content: space-between;
-}  
+    justify-content: space-between;
+}
 .nav_links_section_01 ul{
-justify-content: space-between;
-}    
+    justify-content: space-between;
+}
 .nav_links_section_01 li{
 display: inline-block;    
 padding: 0px 20px;
-}    
+}
 .nav_links_section_01 li a {
 color: rgb(0, 0, 0);
 transition: all 0.3s ease 0s;
