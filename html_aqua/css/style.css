@@ -130,6 +130,10 @@ width: 100%;
 	display: flex;
 }
 
+.button_services:hover {
+	border: solid 2px blue;
+}
+
 .text_service {
 	font-size: 1.4em;
 	margin-left: 10px;
