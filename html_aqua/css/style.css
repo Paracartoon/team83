@@ -304,6 +304,19 @@ padding: 50px;
 	justify-content: center;
 }
 
+.numbers {
+	width: 20px; 
+	height:20px; 
+	background-color: white; 
+	border: 3px solid green; 
+	border-radius: 50px; 
+	display: inline-block; 
+	text-align: center; 
+	padding: 5px 5px 5px 5px; 
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
 .hot_link_container {
 	margin-right: 10%;
 	margin-left: 10%;
