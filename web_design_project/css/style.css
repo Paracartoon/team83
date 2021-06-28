@@ -22,6 +22,11 @@ very dark blue: 123C50
 	src: url("fonts/yellow-rabbit.otf") format("opentype");
 }
 
+@keyframes buttonAnimation {
+	from {background-color: #00d0d0; border-color:#00d0d0 ;}
+  	to {background-color: #016464; border-color:#016464 ;}
+}
+
 h2 {
 	font-size: 40px;
 	font-family: 'YellowRabbit';
@@ -85,40 +90,48 @@ header {
 
 .column {
 	float: left;
+	z-index: auto;
 }
 
 .column1 {
 	flex: 10%;
 	justify-content: center;
 	display: flex;
+	z-index: auto;
 }
 
 .column8 {
 	flex: 80%;
+	z-index: auto;
 }
 
 .column9 {
 	flex: 90%;
+	z-index: auto;
 }
 
 .column3 {
 	flex: 30%;
+	z-index: auto;
 }
 
 .column4 {
 	flex: 40%;
+	z-index: auto;
 }
 
 .column6 {
 	flex: 60%;
 	justify-content: stretch;
 	display: flex;
+	z-index: auto;
 }
 
 .row {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	z-index: auto;
 }
 
 .stretch {
@@ -138,7 +151,10 @@ header {
 }
 
 .button_services:hover {
-	border: solid 2px #00a2a2;
+	border: solid 2px #016464;
+	background-color: #016464;
+	animation-name: buttonAnimation;
+	animation-duration: 1s;
 }
 
 .text_service {
