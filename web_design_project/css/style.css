@@ -22,8 +22,15 @@ very dark blue: 123C50
 }
 
 @keyframes buttonAnimation {
-	from {background-color: #00d0d0; border-color:#00d0d0 ;}
-  	to {background-color: #016464; border-color:#016464 ;}
+	from {
+		background-color: #00d0d0;
+		border-color: #00d0d0;
+	}
+
+	to {
+		background-color: #016464;
+		border-color: #016464;
+	}
 }
 
 h2 {
@@ -159,7 +166,7 @@ header {
 
 .text_service {
 	font-size: 1.4em;
-	margin-left: 10px;
+	margin: auto;
 	line-height: 50px;
 	color: #e7ffff;
 
@@ -196,12 +203,15 @@ header {
 	padding: 20px;
 	height: 150px;
 }
-.interestContainer{
+
+.interestContainer {
 	margin-left: 10%;
 }
-.mainInterst{
+
+.mainInterst {
 	background-color: #b9ffff;
 }
+
 #tickets1 {
 	display: flex;
 	justify-content: stretch;
@@ -243,7 +253,7 @@ header {
 
 	border: 2px solid black;
 	border-radius: 10px;
-	background-color: white;
+	background-color: #76ffedc2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -283,6 +293,7 @@ header {
 	width: 750px;
 	height: 250px;
 	margin-bottom: 50px;
+	background-color: #89ffefd8;
 
 }
 
@@ -331,9 +342,10 @@ header {
 .map {
 	display: block;
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 	justify-content: center;
 }
+
 .park_map_section {
 	align-self: center;
 
@@ -342,26 +354,26 @@ header {
 .park_map {
 	display: block;
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 	justify-content: center;
 }
-#show_bg{
+
+#show_bg {
 	display: block;
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 	justify-content: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-image: url('../img/map_with_numbers_final.png');
-    width: 100;
+    width: 100%;
     height: 1080px;
     /* you need to match the shadow color to your background or image border for the desired effect*/
     box-shadow: 0 0 30px 30px rgb(208, 255, 255) inset;
-}
 
 
 .numbers {
-	
+
 	width: 20px;
 	height: 20px;
 	background-color: white;
@@ -434,6 +446,6 @@ header {
 }
 
 .button_section {
-    background-color: #00d0d0;
-    padding: 20px;
+	background-color: #00d0d0;
+	padding: 20px;
 }
