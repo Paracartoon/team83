@@ -184,7 +184,6 @@ header {
 
 #div_footer {
 	background-color: #a2ffff;
-	width: 100%;
 	height: 300px;
 	padding: 50px 20px 20px 20px;
 	margin-top: 0px;
@@ -215,7 +214,6 @@ header {
 	display: flex;
 	background-color: #b9ffff;
 	flex-direction: column;
-	width: 100%;
 	padding: 20px;
 	height: auto;
 }
@@ -355,7 +353,7 @@ header {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-image: url('../img/map_with_numbers_final.png');
-    width: 1341px;
+    width: 100;
     height: 1080px;
     /* you need to match the shadow color to your background or image border for the desired effect*/
     box-shadow: 0 0 30px 30px rgb(208, 255, 255) inset;
