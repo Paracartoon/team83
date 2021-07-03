@@ -370,6 +370,7 @@ header {
     height: 1080px;
     /* you need to match the shadow color to your background or image border for the desired effect*/
     box-shadow: 0 0 30px 30px rgb(208, 255, 255) inset;
+}
 
 
 .numbers {
