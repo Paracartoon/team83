@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.services_container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 220vh;
+    padding: 0px 0px 0px 0px;
+    /*
+    border: 1px solid rgb(119, 0, 255);
+    background-color: rgb(79, 143, 143);
+    */
+}
+
+.services_container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("img/beach.png");
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.8;
+    /*for later
+    background-color: rgb(51, 189, 189);
+    */
+}
+
+.services_container_women {
+    position: relative;
+    grid-column: 1 / 13;
+    grid-row: 2;
+    height: 80vh;
+    background-color: rgb(143, 131, 79, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    /*
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_container_women img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    justify-content: center;
+}
+
+.services_container_women_description {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #bfe1e9;
+    background-image: url("img/price_women.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services_container_women_image {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/women.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.services_container_color {
+    position: relative;
+    grid-column: 1 / 13;
+    grid-row: 3;
+    height: 80vh;
+    padding: repeat(4, 3rem);
+    background-color: rgb(143, 131, 79, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    /*
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_container_color_description {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #e7d4de;
+    background-image: url("img/price_color.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_container_color_image {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/color.jpeg");
+    background-size: cover;
+    background-position: center;
+    /*
+    background-color: yellowgreen;
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_container_men {
+    position: relative;
+    grid-column: 1 / 13;
+    grid-row: 4;
+    height: 80vh;
+    padding: repeat(4, 3rem);
+    background-color: rgb(143, 131, 79, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    /*
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_container_men_description {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #bfe1e9;
+    background-image: url("img/price_men.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_container_men_image {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/men.jpeg");
+    background-size: cover;
+    background-position: center;
+    /*
+    background-color: yellowgreen;
+    border: 1px solid rgb(119, 0, 255);
+    */
+}
+
+.services_footer {
+    position: relative;
+    grid-row: 5;
+    height: 30vh;
+}
+
+
+/*SERVICES PAGE*/
+
+
+/*SERVICES PAGE*/
+
+
+/*SERVICES PAGE*/
+
+@media (max-width: 800px) {
+    .services_container {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .services_container_women {
+        flex-direction: column;
+        height: 160vh;
+    }
+    .services_container_men {
+        flex-direction: column;
+        height: 160vh;
+    }
+    .services_container_color {
+        flex-direction: column-reverse;
+        height: 160vh;
+    }
+    .services_container_women_image {
+        padding: 0px;
+        height: 70%;
+    }
+    .services_container_women_description {
+        padding: 0px;
+        height: 100%;
+    }
+    .services_container_men_image {
+        padding: 0px;
+        height: 70%;
+    }
+    .services_container_men_description {
+        padding: 0px;
+        height: 100%;
+    }
+    .services_container_color_image {
+        padding: 0px;
+        height: 70%;
+    }
+    .services_container_color_description {
+        padding: 0px;
+        height: 100%;
+    }
+}

@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --opacity: 0px;
+    --main-bg-color: rgb(161, 41, 41);
+    --main-bg-responsive: rgb(105, 253, 100);
+}
+
+li,
+a,
+button {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 252, 252);
+    color: white;
+    text-align: center;
+}
+
+.container_1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 85px 1fr 1fr 1fr 180px;
+    width: 100vw;
+    height: 200vh;
+    padding: 0px 0px 0px 0px;
+    /*for later
+    background-color: rgb(51, 189, 189);
+    */
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.container_principal_page::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("img/edited.png");
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.85;
+    /*for later
+    background-color: rgb(51, 189, 189);
+    */
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.container_principal_page {
+    position: relative;
+    grid-column: 1 / 13;
+    grid-row: 2;
+    height: 80vh;
+    display: block;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.container_principal_page>h1 {
+    position: relative;
+    display: flex;
+    color: whitesmoke;
+    font-size: 56px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.working_hours {
+    position: relative;
+    grid-column: 1 / 13;
+    grid-row: 3;
+    height: 100%;
+    display: flex;
+    border: var(--opacity) solid var(--main-bg-color);
+    align-items: center;
+    padding: 5%;
+    /*
+                border: 2px solid rgb(207, 43, 43);
+        */
+    background-color: black;
+}
+
+.working_hours_tittle {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.working_hours_tittle>h1 {
+    color: #f5f5f5;
+    font-size: 46px;
+}
+
+.working_hours>ul {
+    flex: 50%;
+    border: var(--opacity) solid var(--main-bg-color);
+    color: whitesmoke;
+    text-align: left;
+}
+
+.working_hours li {
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.season_promotions {
+    position: relative;
+    grid-column: 1 / 13;
+    grid-row: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    background-color: teal;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.season_promotions>h1 {
+    border: var(--opacity) solid var(--main-bg-color);
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+.season_promotions_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.season_promotions_content_item>h1 {
+    border: var(--opacity) solid var(--main-bg-color);
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.season_promotions_content_item>ul {
+    display: table;
+    border: var(--opacity) solid var(--main-bg-color);
+    color: whitesmoke;
+}
+
+.season_promotions_content_item li {
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: left;
+}
+
+.footer {
+    position: relative;
+    grid-row: 5;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .container_1 {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .working_hours {
+        flex-direction: column;
+        border: var(--opacity) solid var(--main-bg-color);
+    }
+    .working_hours>h1 {
+        width: 100%;
+        font-size: 46px;
+    }
+    .working_hours>ul {
+        width: 100%;
+        padding: 0%;
+        padding-left: 12%;
+    }
+    .working_hours li {
+        text-align: left;
+    }
+    .season_promotions {
+        border: var(--opacity) solid rgb(207, 43, 43);
+    }
+    .season_promotions_content_item {
+        margin-top: 25px;
+    }
+    .season_promotions_content_item ul {
+        margin-top: 10px;
+    }
+    .season_promotions_content {
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+    }
+    .working_hours_tittle {
+        width: 100%;
+        flex-direction: row;
+    }
+    .working_hours_tittle h1 {
+        margin-left: 3%;
+    }
+    .container_principal_page>h1 {
+        color: rgb(255, 255, 255);
+        font-size: 36px
+    }
+}

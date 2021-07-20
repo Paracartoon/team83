@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer {
+    position: relative;
+    grid-column: 1 / 13;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    padding: 1% 7%;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-around;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.footer_list_item {
+    display: inline-block;
+    width: 25%;
+    padding: 2% 0%;
+    flex-direction: row;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.footer_list_content {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.footer_list_4_content_socials {
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.footer_list_content h1 {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.footer_list_content a,
+.footer_list_content i {
+    padding: 1%;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+
+.fa {
+    color: aliceblue;
+    font-size: 54px;
+}
+
+.footer_list_item_logo {
+    width: 25%;
+    padding: 2vh;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+.footer_logo {
+    padding: 0;
+    background-image: url("img/Web_Logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    border: var(--opacity) solid var(--main-bg-color);
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+    .footer_list {
+        align-items: center;
+        flex-direction: column;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list_item {
+        width: 60%;
+        padding: 4%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list_item_logo {
+        width: 100%;
+        padding: 2%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_logo {
+        padding: 0;
+        background-image: url("img/Web_Logo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 10vh;
+        width: 100%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list_content {
+        width: 100%;
+        padding: 1% 1%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
